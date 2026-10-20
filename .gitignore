@@ -1,0 +1,72 @@
+# ===================================
+# METSO CONFIDENTIAL DATA
+# ===================================
+
+raw/
+data/
+
+# ===================================
+# PRIVATE GENERATED FILES
+# ===================================
+
+local_cache/
+logs/
+docs/private/
+artifacts/private/
+
+# ===================================
+# API KEYS AND SECRETS
+# ===================================
+
+.env
+.env.*
+!.env.example
+
+# ===================================
+# PYTHON
+# ===================================
+
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ===================================
+# TESTING
+# ===================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===================================
+# LOCAL DATABASES
+# ===================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+# ===================================
+# OPERATING SYSTEM
+# ===================================
+
+Thumbs.db
+.DS_Store
+
+
+
+raw/
+local_cache/
+logs/
+.venv/
+.env
+docs/private/
+*.egg-info/
+.pytest_cache/
+__pycache__/
+# Private candidate files
+/Arman.txt
+/Metso_Report_Parts_*
+*.pdf
+*.tex

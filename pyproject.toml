@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metso-sales-agent"
+version = "0.1.0"
+description = "Evidence-Grounded AI Sales Assistant"
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    "openai>=2,<3",
+    "pydantic>=2,<3",
+    "python-dotenv>=1,<2",
+    "rich>=13,<16",
+    "pandas>=2.2,<3",
+    "numpy>=1.26,<3",
+    "scikit-learn>=1.4,<2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10"
+]
+
+[project.scripts]
+metso-agent = "metso_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
